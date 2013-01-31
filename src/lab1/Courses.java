@@ -14,7 +14,7 @@ public abstract class Courses {
     private String courseName;
     private String courseNumber;
     private double credits;
-    
+    private String prerequisites;
     
     
     public String getCapitalizedCourseName() {
@@ -27,7 +27,8 @@ public abstract class Courses {
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        this.setCredits(credits);
+//was calling on its self to set its self        
+        this.credits = credits;
     }
     
     public String getCourseName() {
@@ -40,8 +41,14 @@ public abstract class Courses {
                     "Error: courseName cannot be null of empty string");
             System.exit(0);
         }
+//value was never set to propery
+        this.courseName=courseName;
     }
 
+    public double getCredits() {
+        return credits;
+    }
+    
     public String getCourseNumber() {
         return courseNumber;
     }
@@ -54,4 +61,5 @@ public abstract class Courses {
         }
         this.courseNumber = courseNumber;
     }
+    
 }

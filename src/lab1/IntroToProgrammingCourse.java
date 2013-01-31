@@ -10,10 +10,10 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class IntroToProgrammingCourse  extends Courses{
-    
-    public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+
+    public IntroToProgrammingCourse() {
     }
+    
+    
 
 }
