@@ -11,8 +11,11 @@ import javax.swing.JOptionPane;
  */
 public class IntroToProgrammingCourse  extends Courses{
 
-    public IntroToProgrammingCourse() {
+    public IntroToProgrammingCourse(String courseName, String courseNumber, double credits, String prerequisites) {
+        super(courseName, courseNumber, credits, prerequisites);
     }
+
+    
     
     
 

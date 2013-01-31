@@ -1,5 +1,7 @@
 package lab1;
 
+import javax.swing.JOptionPane;
+
 /**
  * Describe responsibilities here.
  *
@@ -7,15 +9,14 @@ package lab1;
  * @version     1.00
  */
 public class IntroJavaCourse  extends Courses{
-    private String prerequisites;
 
-    public String getPrerequisites() {
-        return prerequisites;
+    public IntroJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
+        super(courseName, courseNumber, credits, prerequisites);
     }
+    
 
-    public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
-    }
+    
+    
 
     
 
