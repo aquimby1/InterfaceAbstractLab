@@ -5,13 +5,14 @@ import javax.swing.JOptionPane;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      Andrew Quimby
  * @version     1.00
  */
 public class IntroToProgrammingCourse {
     private String courseName;
     private String courseNumber;
     private double credits;
+    private String prerequisites;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
