@@ -8,15 +8,17 @@ import javax.swing.JOptionPane;
  * @author      Andrew Quimby
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse implements ProgramingCourses{
     private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+    public IntroToProgrammingCourse(String courseName, String courseNumber, double credits, String prerequisites) {
+        this.courseName = courseName;
+        this.courseNumber = courseNumber;
+        this.credits = credits;
+        this.prerequisites = prerequisites;
     }
 
     public String getCourseNumber() {
@@ -49,7 +51,7 @@ public class IntroToProgrammingCourse {
         return courseName;
     }
 
-    public final void setCourseName(String courseName) {
+    public void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
@@ -58,5 +60,13 @@ public class IntroToProgrammingCourse {
         this.courseName = courseName;
     }
 
-    
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
+    }
+
+       
 }
